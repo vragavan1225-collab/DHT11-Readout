@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "author": "Anusa P",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-dht11", "id": "dht1", "top": -80, "left": 100, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:GND.1", "dht1:GND", "black", [ "v0" ] ],
+    [ "esp:3V3", "dht1:VCC", "red", [ "v0" ] ],
+    [ "esp:D4", "dht1:SDA", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
